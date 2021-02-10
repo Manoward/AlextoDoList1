@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alex To-Do List</title>
+        <link rel="stylesheet" href="css/toDo.css"/>
+        <link rel="icon" type="image/png" href="images/iconLogo.png"/>
+       
+    </head>
+    <body>
+        <div id="todo">
+            <h1>Мой список дел <img src="images/pencilIcon.png" alt="Изменить" class="todo-pencil"></h1>
+            <input type="text" placeholder="Добавить новое дело" id="textBox"/>
+            <input type="button" value="+" id="addToDo"/>
+            <ul class="todoList">
+                <li><span class="todo-text">Сделать дело</span><img src="images/trashIcon.png" alt="Корзина" class="todo-trash"/></li>
+            </ul>
+            <div id="buttons">
+                <button class="save">Сохранить</button>
+                <button class="clear">Очистить</button>
+                <button class="tipBtn">Справка</button>
+            </div>
+        </div>
+        <div id="saveMassage">
+            <span>Save is done</span>
+        </div>
+        <div id="overlay">
+            <a href="javascript:void(0)" class="closeTips">&times;</a>
+            <ul class="tips">
+                <li>Для добавления списка дел напишите текст в поле ввода и нажмите кнопку "+"</li>
+                <li>Нажмите "Сохранить", что бы список дел сохранился</li>
+                <li>Чтобы удалить один пункт, нажмите на значок корзины в этом поле</li>
+                <li>Чтобы удалить все списки дел, нажмите "Очистить"</li>
+            </ul>
+        </div>
+        <script src="js/toDo.js"></script>
+    </body>
+</html>
